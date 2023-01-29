@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    flex: 1 1 0;
+}
+.container{
+    width: 960px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 48px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+.topo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 13px;
+    margin-top: 15px;
+}
+.topo a{
+    color: black;
+    text-decoration: none;
+}
+.topo a:hover{
+    text-decoration: underline;
+}
+.img-quadradinhos img{
+    width: 28px;
+}
+.img-logo{
+    margin-top: 20px;
+}
+.img-login img{
+    width: 33px;
+    border-radius: 50%;
+}
+.gmail,
+.images,
+.img-quadradinhos{
+    margin-right: 14px;
+}
+.gmail,
+.images{
+    margin-bottom: 3px;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pesquisar{
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.pesquisar input[type='text']{
+    width: 638px;
+    height: 44px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 20px;
+}
+.botoes button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.rodape{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.brasil{
+    padding: 13px 30px;
+    border-bottom: 1px solid #dadce0;
+    color: #70757a;
+    background-color: #f2f2f2;
+    font-size: 15px;
+}
+.nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 15px 24px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 14px;
+    color: #70757a;
+    
+}
+ul{
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    color: #70757a;
+}
+li{
+    list-style: none;
+    padding: 13px;
+}
+.rodape a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 768px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .brasil{
+        text-align: center;
+    }
+    .pesquisar input[type='text']{
+        width: 350px;
+    }
+}
